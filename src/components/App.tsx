@@ -1,4 +1,4 @@
-import * as React from "react";
+import { useState } from "react";
 import { hot } from "react-hot-loader";
 
 const reactLogo = require("./../assets/img/react_logo.svg");
@@ -6,7 +6,7 @@ import "./../assets/scss/App.scss";
 import Main from "./Main";
 
 const App = () => {
-  const [count, setCount] = React.useState(0);
+  const [count, setCount] = useState(0);
 
   return (
     <div className="app">
