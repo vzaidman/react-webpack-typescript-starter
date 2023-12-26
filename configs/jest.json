@@ -1,5 +1,6 @@
 {
   "rootDir": "..",
+  "testEnvironment": "jsdom",
   "coverageDirectory": "<rootDir>/tests/__coverage__/",
   "setupFiles": ["<rootDir>/tests/__mocks__/shim.js"],
   "roots": ["<rootDir>/src/", "<rootDir>/tests/"],
@@ -8,9 +9,6 @@
     "\\.(css|scss|less)$": "<rootDir>/tests/__mocks__/styleMock.js"
   },
   "moduleFileExtensions": ["ts", "tsx", "js", "jsx"],
-  "transform": {
-    "^.+\\.(ts|tsx)$": "<rootDir>/configs/jest.preprocessor.js"
-  },
   "transformIgnorePatterns": ["/node_modules/"],
   "testRegex": "/tests/.*\\.(ts|tsx)$",
   "moduleDirectories": ["node_modules"],

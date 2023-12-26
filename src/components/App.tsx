@@ -1,9 +1,7 @@
-import { useState } from "react";
-import { hot } from "react-hot-loader";
-
-const reactLogo = require("./../assets/img/react_logo.svg");
+import * as React from "react";
 import "./../assets/scss/App.scss";
 import Main from "./Main";
+import reactLogo from "./../assets/img/react_logo.svg";
 
 const App = () => {
   const [count, setCount] = useState(0);
@@ -19,6 +17,12 @@ const App = () => {
   );
 };
 
-declare let module: Record<string, unknown>;
+const App = () => (
+  <div className="app">
+    <h1>Hello World!</h1>
+    <p>Foo to the barz</p>
+    <img src={reactLogo} height="480" />
+  </div>
+);
 
-export default hot(module)(App);
+export default App;

@@ -1,15 +1,24 @@
+# DEPRECATED
+**This project is no longer maintained**, please consider using the following projects instead:
+
+* [**Vite**](https://vitejs.dev/)
+* [Parcel](https://parceljs.org/)
+* [Create React App](https://create-react-app.dev/)
+
+---
+
 # React Webpack Typescript Starter
 > Minimal starter with hot module replacement (HMR) for rapid development.
 
-* **[React](https://facebook.github.io/react/)** (17.x)
+* **[React](https://facebook.github.io/react/)** (18.x)
 * **[Webpack](https://webpack.js.org/)** (5.x)
 * **[Typescript](https://www.typescriptlang.org/)** (4.x)
-* **[Hot Module Replacement (HMR)](https://webpack.js.org/concepts/hot-module-replacement/)** ([React Hot Loader](https://github.com/gaearon/react-hot-loader))
-* Production build script (Webpack)
-* Image loading/minification ([Image Webpack Loader](https://github.com/tcoopman/image-webpack-loader))
+* **[Hot Module Replacement (HMR)](https://webpack.js.org/concepts/hot-module-replacement/)** + [Fast Refresh](https://github.com/pmmmwh/react-refresh-webpack-plugin)
+* Image support
 * [SASS](http://sass-lang.com/) support
+* Production build script
 * Code linting ([ESLint](https://github.com/eslint/eslint)) and formatting ([Prettier](https://github.com/prettier/prettier))
-* Test framework ([Jest](https://facebook.github.io/jest/))
+* Test frameworks ([Jest](https://facebook.github.io/jest/) + [React Testing Library](https://testing-library.com/docs/react-testing-library/intro))
 
 ## Installation
 1. Clone/download repo
@@ -47,7 +56,6 @@ Command | Description
 **Note**: replace `yarn` with `npm` in `package.json` if you use npm.
 
 ## See also
-* [React Webpack Babel Starter](https://github.com/vikpe/react-webpack-babel-starter)
-* [Snowpack](https://github.com/snowpackjs/snowpack)
 * [Create React App](https://github.com/facebook/create-react-app)
-* [Isomorphic Webapp Starter](https://github.com/vikpe/isomorphic-webapp-starter)
+* [Astro](https://astro.build/)
+* [Vite](https://vitejs.dev/)

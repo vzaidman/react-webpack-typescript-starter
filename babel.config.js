@@ -1,6 +1,6 @@
 module.exports = {
   presets: [
-    "@babel/preset-env",
+    "@babel/env",
     [
       "@babel/preset-react",
       {
@@ -10,11 +10,5 @@ module.exports = {
       },
     ],
     "@babel/preset-typescript",
-  ],
-  plugins: ["react-hot-loader/babel"],
-  env: {
-    production: {
-      presets: ["minify"],
-    },
-  },
+  ]
 };

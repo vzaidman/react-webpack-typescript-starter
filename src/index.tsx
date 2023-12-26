@@ -1,8 +1,9 @@
 import "./scripts/wdyr";
 
-import { render } from "react-dom";
+import { createRoot } from "react-dom/client";
+import * as React from "react";
 import App from "./components/App";
 
-const rootEl = document.getElementById("root");
-
-render(<App />, rootEl);
+const container = document.getElementById("root");
+const root = createRoot(container!);
+root.render(<App />);
