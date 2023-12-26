@@ -1,8 +1,9 @@
-import * as React from "react";
+import { useState } from "react";
 import "./../assets/scss/App.scss";
 import Main from "./Main";
-import reactLogo from "./../assets/img/react_logo.svg";
+import reactLogo from "../assets/img/react_logo.svg";
 
+// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 const App = () => {
   const [count, setCount] = useState(0);
 
@@ -16,13 +17,5 @@ const App = () => {
     </div>
   );
 };
-
-const App = () => (
-  <div className="app">
-    <h1>Hello World!</h1>
-    <p>Foo to the barz</p>
-    <img src={reactLogo} height="480" />
-  </div>
-);
 
 export default App;
